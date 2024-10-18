@@ -74,7 +74,7 @@
                                 console.log('Parsed Data:', results.data); // Log the parsed data
                                 const newsContainer = document.getElementById('news-container');
                                 newsContainer.innerHTML = ''; // Clear previous content
-                                results.data.forEach(row => {
+                                results.data.reverse().forEach(row => {
                                     if (!row.Nadpis || !row.Novinka || !row.Datum || !row.Podpis) return; // Skip incomplete rows
 
                                     const cardRow = document.createElement('div');
