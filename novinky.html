@@ -22,7 +22,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQXlfXRcfpV8LdX0ZlryLEwwOs8YgzHLrgFsGheBJ5bSuR9CMGBkZlQPNQNyO_rJxCNWkoedIvZOkq5/pub?output=csv';
-            const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+            const proxyUrl = 'https://corsproxy.io/?';
 
             fetch(proxyUrl + sheetUrl)
                 .then(response => response.text())
